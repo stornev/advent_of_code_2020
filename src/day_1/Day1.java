@@ -11,8 +11,10 @@ public class Day1 extends DayX {
     }
 
     public static void main(String[] args) {
-        Day1 day = new Day1(2020, 1, "53616c7465645f5f6f3daa0de4ff954b137ec76bb0" +
-                "695216a07ebb94c00217b35a0bb4f776069b8b0957988f7c6074ff");
+        // To get session cookie when you're logged in, inspect -> go to network tab -> click on day# -> click on day#
+        // in network tab -> scroll down into request headers -> copy & paste the session= cookie into the string below
+        Day1 day = new Day1(2020, 1, "(your cookie here)" +
+                "");
 
         System.out.println(day.partOne());
         System.out.println(day.partTwo());
